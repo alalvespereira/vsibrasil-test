@@ -16,7 +16,7 @@ import java.util.Map;
 @RequestMapping("health")
 public class HealthController {
 
-    @GetMapping("/")
+    @GetMapping("")
     public ResponseEntity<Object> healthCheck(){
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("status", "OK");
